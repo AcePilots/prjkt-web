@@ -5,3 +5,9 @@ window.addEventListener('load', () => {
     audio.play();
   });
 });
+
+const element = document.querySelector('.element');
+
+element.addEventListener('mouseover', function() {
+  audio.play();
+});
