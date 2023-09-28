@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Poppins:ital,wght@0,300;0,400;0,700;1,200;1,300;1,700&display=swap');
+
+@font-face {
+    font-family: Helsinki ;
+    src: url(/fnt/helsinkixxl-black.otf);
+}
+
+@font-face {
+    font-family: HelsinkiL;
+    src: url(/fnt/helsinkixxl-thin.otf);
+}
+
+:root {
+    override-colors :  #ededed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+        
+}
+ 
+.logo {
+    font-size: 35px;
+    color: #ededed ;
+    text-decoration: none;
+    font-weight: 600;
+   
+}
+
+.logo::before {
+    content:' ';
+    position: relative;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #ededed ;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: 1;
+}
+
+.navbar a:hover,
+.navbar a.active {
+
+    color: #ededed;
+}
+
+
+.Home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-size: cover;
+    background-position: center;
+    background: url(/img/wallpaperflare.com_wallpaper\ \(2\).jpg);        
+}
+
+.homec {
+     max-width: 550px;
+    
+}
+                                  
+.homec h1{
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.homec h3{
+    font-size: 32px;
+    font-weight: 300;
+    color: #ededed;
+}
+.homec p{
+
+    font-size: 16px;
+}
+
+.homes {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.homes a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid  red;
+    border-radius: 50%;
+    font-size: 25px;
+    color:  red;
+    text-decoration: none;
+    z-index: 1; 
+    overflow: hidden;
+    transition: 1s;
+    
+}
+.homes a:hover {
+    color: black;
+}
+.homes a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: red;
+    transition: 0.5s;
+}
+
+.homes a:hover::before {
+
+    width: 100%;
+
+}
+
+.home-hover {
+    position: absolute;
+    top: 0;
+    right: 245px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+   
+    transition: 3s;
+}
+
+.home-hover:hover {
+    background-color:black;
+    opacity: 0.8;
+}
+
