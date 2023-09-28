@@ -11,3 +11,9 @@ const element = document.querySelector('.element');
 element.addEventListener('mouseover', function() {
   audio.play();
 });
+
+const homeHover = document.querySelector('.home-hover');
+
+homeHover.addEventListener('mouseover', function() {
+  audio.play();
+});
