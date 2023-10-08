@@ -83,7 +83,7 @@ body {
 }
 
 .Home::after {
-    content: url(img/whatsapp.jpg);
+    content: url(whatsapp.jpg);
     margin-left: 140px;
 }
 .Home {
