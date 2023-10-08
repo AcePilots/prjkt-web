@@ -83,7 +83,7 @@ body {
 }
 
 .Home::after {
-    content: url(/img/WhatsApp\ Image\ 2023-09-20\ at\ 21.18.35.jpg);
+   content: url(WhatsApp\ Image\ 2023-09-20\ at\ 21.18.35.jpg);
     margin-left: 140px;
 }
 .Home {
